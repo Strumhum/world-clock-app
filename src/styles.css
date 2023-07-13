@@ -1,1 +1,108 @@
+body {
+  background-color: #faf3fc;
+  background: linear-gradient(
+    0deg,
+    rgba(250, 243, 252, 1) 60%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  font-family: "Noto Sans", sans-serif;
+}
 
+img {
+  max-width: 20%;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #442a9d;
+  text-align: center;
+  margin: 8px 0 25px 0;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #f14e95;
+  margin: 15px 0;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(68, 42, 157, 0.8);
+  margin: 5px 0;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 500;
+  color: #442a9d;
+  vertical-align: middle;
+  margin: 15px 0;
+}
+
+select {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  border-color: #442a9d;
+  padding: 10px 15px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #442a9d;
+}
+
+footer {
+  font-size: 15px;
+  font-weight: 200;
+  text-align: center;
+  color: rgba(68, 42, 157, 0.7);
+  margin-bottom: 50px;
+}
+a {
+  color: #442a9d;
+}
+
+a:hover {
+  color: #f14e95;
+}
+
+.container {
+  max-width: 600px;
+  display: block;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(147, 142, 149, 0.2) 0px 8px 24px;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed rgba(68, 42, 157, 0.2);
+  padding: 20px 0;
+}
+
+.meridian {
+  font-size: 30px;
+  vertical-align: middle;
+  line-height: 60px;
+}
+
+.quote {
+  font-family: "Kalam", cursive;
+  font-size: 17px;
+  color: #f14e95;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 10px;
+}
+
+#city-4 {
+  border: none;
+}

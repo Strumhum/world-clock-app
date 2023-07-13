@@ -7,10 +7,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;900&family=Monoton&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Noto+Sans:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>World Clock App - Sue McMillan</title>
   </head>
   <body>
@@ -34,7 +37,7 @@
           <h4 class="date">11th July 2023</h4>
         </div>
         <div>
-          <h2 class="time">3:29:43 AM</h2>
+          <h2 class="time">11:05:37 <span class="meridian">AM</span></h2>
         </div>
       </div>
       <div class="city" id="city-2">
@@ -43,7 +46,7 @@
           <h4 class="date">11th July 2023</h4>
         </div>
         <div>
-          <h2 class="time">3:29:43 PM</h2>
+          <h2 class="time">8:41:12 <span class="meridian">PM</span></h2>
         </div>
       </div>
       <div class="city" id="city-3">
@@ -52,7 +55,7 @@
           <h4 class="date">11th July 2023</h4>
         </div>
         <div>
-          <h2 class="time">3:29:43 AM</h2>
+          <h2 class="time">3:29:43 <span class="meridian">AM</span></h2>
         </div>
       </div>
       <div class="city" id="city-4">
@@ -61,7 +64,7 @@
           <h4 class="date">11th July 2023</h4>
         </div>
         <div>
-          <h2 class="time">10:29:43 PM</h2>
+          <h2 class="time">10:29:43 <span class="meridian">PM</span></h2>
         </div>
       </div>
       <div class="quote">
@@ -69,7 +72,8 @@
       </div>
     </div>
     <footer>
-      This project was coded by Sue McMillan and is open-sourced on
+      This project was coded by <strong>Sue McMillan</strong> and is
+      open-sourced on
       <a
         href="https://github.com/Strumhum/world-clock-app"
         target="_blank"
@@ -77,6 +81,5 @@
         >GitHub</a
       >
     </footer>
-    <script src="src/styles.css"></script>
   </body>
 </html>
