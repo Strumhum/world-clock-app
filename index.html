@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,9 +15,9 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">
+      <div>
         <img src="images/world-clock-icon.png" alt="clock graphic" />
-        <h1>World Time</h1>
+        <h1 class="header-title">World Time</h1>
       </div>
       <div class="select">
         <select name="" id="city-select">
@@ -33,29 +28,41 @@
           <option value="">🇨🇳 Shanghai</option>
         </select>
       </div>
-      <div class="city-list" id="city-1">
-        <h3>Barcelona</h3>
-        <h4>11th July 2023</h4>
-        <h2>h:m:s AM</h2>
-        <hr />
+      <div class="city" id="city-1">
+        <div>
+          <h3 class="city-name">Barcelona</h3>
+          <h4 class="date">11th July 2023</h4>
+        </div>
+        <div>
+          <h2 class="time">3:29:43 AM</h2>
+        </div>
       </div>
-      <div class="city-list" id="city-2">
-        <h3>New York</h3>
-        <h4>11th July 2023</h4>
-        <h2>h:m:s AM</h2>
-        <hr />
+      <div class="city" id="city-2">
+        <div>
+          <h3 class="city-name">New York</h3>
+          <h4 class="date">11th July 2023</h4>
+        </div>
+        <div>
+          <h2 class="time">3:29:43 PM</h2>
+        </div>
       </div>
-      <div class="city-list" id="city-3">
-        <h3>Sydney</h3>
-        <h4>11th July 2023</h4>
-        <h2>h:m:s AM</h2>
-        <hr />
+      <div class="city" id="city-3">
+        <div>
+          <h3 class="city-name">Sydney</h3>
+          <h4 class="date">11th July 2023</h4>
+        </div>
+        <div>
+          <h2 class="time">3:29:43 AM</h2>
+        </div>
       </div>
-      <div class="city-list" id="city-4">
-        <h3>Nashville</h3>
-        <h4>11th July 2023</h4>
-        <h2>h:m:s AM</h2>
-        <hr />
+      <div class="city" id="city-4">
+        <div>
+          <h3 class="city-name">Nashville</h3>
+          <h4 class="date">11th July 2023</h4>
+        </div>
+        <div>
+          <h2 class="time">10:29:43 PM</h2>
+        </div>
       </div>
       <div class="quote">
         "Don't watch the clock; do what it does. Keep going." - Sam Levenson
@@ -68,7 +75,7 @@
         target="_blank"
         rel="noopener noreferrer"
         >GitHub</a
-      >.
+      >
     </footer>
     <script src="src/styles.css"></script>
   </body>
