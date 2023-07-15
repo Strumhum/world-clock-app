@@ -38,8 +38,21 @@ function updateTime() {
     );
   }
 
+  // Phnom Penh
+  let phnomPenhElement = document.querySelector("#city-4");
+  if (phnomPenhElement) {
+    let phnomPenhDateElement = phnomPenhElement.querySelector(".date");
+    let phnomPenhTimeElement = phnomPenhElement.querySelector(".time");
+    let phnomPenhTime = moment().tz("Asia/Phnom_Penh");
+
+    phnomPenhDateElement.innerHTML = phnomPenhTime.format("Do MMMM YYYY");
+    phnomPenhTimeElement.innerHTML = phnomPenhTime.format(
+      `h:mm:ss [<span class="meridian">]A[</span>]`
+    );
+  }
+
   // Istanbul
-  let istanbulElement = document.querySelector("#city-4");
+  let istanbulElement = document.querySelector("#city-5");
   if (istanbulElement) {
     let istanbulDateElement = istanbulElement.querySelector(".date");
     let istanbulTimeElement = istanbulElement.querySelector(".time");
@@ -47,6 +60,19 @@ function updateTime() {
 
     istanbulDateElement.innerHTML = istanbulTime.format("Do MMMM YYYY");
     istanbulTimeElement.innerHTML = istanbulTime.format(
+      `h:mm:ss [<span class="meridian">]A[</span>]`
+    );
+  }
+
+  // Los Angeles
+  let losAngelesElement = document.querySelector("#city-6");
+  if (losAngelesElement) {
+    let losAngelesDateElement = losAngelesElement.querySelector(".date");
+    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
+    let losAngelesTime = moment().tz("America/Los_Angeles");
+
+    losAngelesDateElement.innerHTML = losAngelesTime.format("Do MMMM YYYY");
+    losAngelesTimeElement.innerHTML = losAngelesTime.format(
       `h:mm:ss [<span class="meridian">]A[</span>]`
     );
   }
@@ -72,7 +98,9 @@ function updateCities(event) {
               "h:mm:ss"
             )} <span class="meridian">${cityTime.format("A")}</span></h2>
           </div>
-        </div>`;
+        </div>
+        <a href="index.html" id="back-link">Back to default city view</a>
+        `;
 }
 
 updateTime();

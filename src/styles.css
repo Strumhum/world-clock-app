@@ -6,6 +6,7 @@ body {
     rgba(255, 255, 255, 1) 100%
   );
   font-family: "Noto Sans", sans-serif;
+  padding-bottom: 200px;
 }
 
 img {
@@ -56,7 +57,7 @@ select {
 }
 
 footer {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 200;
   text-align: center;
   color: rgba(68, 42, 157, 0.7);
@@ -95,7 +96,7 @@ a:hover {
 
 .quote {
   font-family: "Kalam", cursive;
-  font-size: 17px;
+  font-size: 18px;
   color: #f14e95;
   text-align: center;
   padding: 20px 0;
@@ -103,5 +104,9 @@ a:hover {
 }
 
 .city:last-child {
+  border: none;
+}
+
+.city:only-of-type {
   border: none;
 }
