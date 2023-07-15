@@ -52,6 +52,7 @@ function updateTime() {
   }
 }
 
+// dropdown city selector
 function updateCities(event) {
   let cityTimeZone = event.target.value;
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
