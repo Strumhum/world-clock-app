@@ -102,6 +102,6 @@ a:hover {
   margin-top: 10px;
 }
 
-#city-4 {
+.city:last-child {
   border: none;
 }
